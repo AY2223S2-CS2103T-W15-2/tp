@@ -39,12 +39,14 @@ public class LogicManager implements Logic {
 
     @Override
     public CommandResult execute(String commandText) throws CommandException, ParseException {
+        System.out.println("EXECUTING 2");
         logger.info("----------------[USER COMMAND][" + commandText + "]");
 
         CommandResult commandResult;
         Command command = addressBookParser.parseCommand(commandText);
         commandResult = command.execute(model);
 
+        System.out.println("EXECUTING 3");
         try {
             storage.saveAddressBook(model.getAddressBook());
         } catch (IOException ioe) {
