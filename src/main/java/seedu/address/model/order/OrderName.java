@@ -3,6 +3,9 @@ package seedu.address.model.order;
 import static java.util.Objects.requireNonNull;
 import static seedu.address.commons.util.AppUtil.checkArgument;
 
+/**
+ * Order Name of the order
+ */
 public class OrderName {
 
     public static final String MESSAGE_CONSTRAINTS =
@@ -12,12 +15,21 @@ public class OrderName {
 
     public final String value;
 
+    /**
+     * Order Name object
+     * @param orderName
+     */
     public OrderName(String orderName) {
         requireNonNull(orderName);
         checkArgument(isValidOrderName(orderName), MESSAGE_CONSTRAINTS);
         value = orderName;
     }
 
+    /**
+     * returns true if order name is valid
+     * @param test
+     * @return boolean true or false
+     */
     public static boolean isValidOrderName(String test) {
         return test.matches(VALIDATION_REGEK);
     }

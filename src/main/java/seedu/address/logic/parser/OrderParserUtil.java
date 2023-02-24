@@ -40,7 +40,7 @@ public class OrderParserUtil {
     /**
      * Parses the address of an order
      * @param address
-     * @return
+     * @return Address
      * @throws ParseException
      */
     public static Address parseAddress(String address) throws ParseException {
@@ -55,7 +55,7 @@ public class OrderParserUtil {
     /**
      * Parses the delivery date and time of the order
      * @param deliverydatetime
-     * @return
+     * @return DeliveryDateTime
      * @throws ParseException
      */
     public static DeliveryDateTime parseDeliveryDateTime(String deliverydatetime) throws ParseException {
@@ -70,7 +70,7 @@ public class OrderParserUtil {
     /**
      * parses the qunatity of the order
      * @param quantity
-     * @return
+     * @return Quantity
      * @throws ParseException
      */
     public static Quantity parseQuantity(String quantity) throws ParseException {
@@ -85,7 +85,7 @@ public class OrderParserUtil {
     /**
      * Parses the name of the order
      * @param name
-     * @return
+     * @return Name
      * @throws ParseException
      */
     public static Name parseName(String name) throws ParseException {
@@ -100,7 +100,7 @@ public class OrderParserUtil {
     /**
      * Parses the phone number of the order
      * @param phone
-     * @return
+     * @return Phone
      * @throws ParseException
      */
     public static Phone parsePhone(String phone) throws ParseException {
@@ -115,7 +115,7 @@ public class OrderParserUtil {
     /**
      * parses the tag of the order
      * @param tag
-     * @return
+     * @return Tag
      * @throws ParseException
      */
     public static Tag parseTag(String tag) throws ParseException {
@@ -130,7 +130,7 @@ public class OrderParserUtil {
     /**
      * Parses the tags of the order
      * @param tags
-     * @return
+     * @return Set<Tag>
      * @throws ParseException
      */
     public static Set<Tag> parseTags(Collection<String> tags) throws ParseException {

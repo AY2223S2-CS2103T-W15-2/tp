@@ -38,7 +38,7 @@ public class AddOrderCommandParser implements Parser<AddOrderCommand> {
                 PREFIX_ADDRESS, PREFIX_DELIVERYDATETIME, PREFIX_PHONE, PREFIX_TAG);
 
         if (!arePrefixesPresent(argMultimap, PREFIX_ORDERNAME, PREFIX_QUANTITY, PREFIX_NAME,
-        PREFIX_ADDRESS, PREFIX_DELIVERYDATETIME)
+            PREFIX_ADDRESS, PREFIX_DELIVERYDATETIME)
                 || !argMultimap.getPreamble().isEmpty()) {
             throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT, AddOrderCommand.MESSAGE_USAGE));
         }
@@ -48,7 +48,8 @@ public class AddOrderCommandParser implements Parser<AddOrderCommand> {
         Name name = OrderParserUtil.parseName(argMultimap.getValue(PREFIX_NAME).get());
         Phone phone = OrderParserUtil.parsePhone(argMultimap.getValue(PREFIX_PHONE).get());
         Address address = OrderParserUtil.parseAddress(argMultimap.getValue(PREFIX_ADDRESS).get());
-        DeliveryDateTime deliveryDateTime = OrderParserUtil.parseDeliveryDateTime(argMultimap.getValue(PREFIX_DELIVERYDATETIME).get());
+        DeliveryDateTime deliveryDateTime = OrderParserUtil.parseDeliveryDateTime
+            (argMultimap.getValue(PREFIX_DELIVERYDATETIME).get());
         Quantity quantity = OrderParserUtil.parseQuantity(argMultimap.getValue(PREFIX_QUANTITY).get());
         Set<Tag> tagList = OrderParserUtil.parseTags(argMultimap.getAllValues(PREFIX_TAG));
 

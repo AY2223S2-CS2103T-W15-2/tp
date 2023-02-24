@@ -13,8 +13,8 @@ import java.time.format.DateTimeFormatter;
  */
 public class DeliveryDateTime {
 
-    public static final String MESSAGE_CONSTRAINTS = "Date and time should only contain numbers," +
-    "and it should be in the form dd/MM/yyyy HHmm";
+    public static final String MESSAGE_CONSTRAINTS = "Date and time should only contain numbers,"
+        + "and it should be in the form dd/MM/yyyy HHmm";
     private static final String pattern = "dd/MM/yyyy HHmm";
 
     public final LocalDateTime value;

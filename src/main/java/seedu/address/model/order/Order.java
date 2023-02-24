@@ -121,11 +121,11 @@ public class Order {
 
     @Override
     public boolean equals(Object other) {
-        if(other == this) {
+        if (other == this) {
             return true;
         }
 
-        if(!(other instanceof Order)) {
+        if (!(other instanceof Order)) {
             return false;
         }
 

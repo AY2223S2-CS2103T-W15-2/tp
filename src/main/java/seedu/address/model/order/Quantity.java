@@ -13,6 +13,10 @@ public class Quantity {
     public static final String VALIDATION_REGEX = "\\d+";
     public final String value;
 
+    /**
+     * Quantity of the order
+     * @param quantity
+     */
     public Quantity(String quantity) {
         requireNonNull(quantity);
         checkArgument(isValidQuantity(quantity), MESSAGE_CONSTRAINTS);
