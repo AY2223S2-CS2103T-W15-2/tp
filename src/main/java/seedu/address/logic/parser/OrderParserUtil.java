@@ -15,47 +15,79 @@ import seedu.address.model.order.Phone;
 import seedu.address.model.order.Quantity;
 import seedu.address.model.tag.Tag;
 
-
+/**
+ * Parser that Parses the different components of an order
+ */
 public class OrderParserUtil {
 
+    /**
+     * Parses the order name of the order
+     * @param ordername
+     * @return OrderName
+     * @throws ParseException
+     */
     public static OrderName parseOrderName(String ordername) throws ParseException {
         requireNonNull(ordername);
         System.out.println(ordername);
         String trimmedOrderName = ordername.trim();
         System.out.println(trimmedOrderName);
-        if(!OrderName.isValidOrderName(trimmedOrderName)) {
+        if (!OrderName.isValidOrderName(trimmedOrderName)) {
             throw new ParseException(OrderName.MESSAGE_CONSTRAINTS);
         }
         return new OrderName(trimmedOrderName);
     }
 
+    /**
+     * Parses the address of an order
+     * @param address
+     * @return
+     * @throws ParseException
+     */
     public static Address parseAddress(String address) throws ParseException {
         requireNonNull(address);
         String trimmedAddress = address.trim();
-        if(!Address.isValidAddress(trimmedAddress)) {
+        if (!Address.isValidAddress(trimmedAddress)) {
             throw new ParseException(Address.MESSAGE_CONSTRAINTS);
         }
         return new Address(trimmedAddress);
     }
 
+    /**
+     * Parses the delivery date and time of the order
+     * @param deliverydatetime
+     * @return
+     * @throws ParseException
+     */
     public static DeliveryDateTime parseDeliveryDateTime(String deliverydatetime) throws ParseException {
         requireNonNull(deliverydatetime);
         String trimmedDeliveryDateTime = deliverydatetime.trim();
-        if(!DeliveryDateTime.isValidDate(trimmedDeliveryDateTime)) {
+        if (!DeliveryDateTime.isValidDate(trimmedDeliveryDateTime)) {
             throw new ParseException(DeliveryDateTime.MESSAGE_CONSTRAINTS);
         }
         return new DeliveryDateTime(trimmedDeliveryDateTime);
     }
 
+    /**
+     * parses the qunatity of the order
+     * @param quantity
+     * @return
+     * @throws ParseException
+     */
     public static Quantity parseQuantity(String quantity) throws ParseException {
         requireNonNull(quantity);
         String trimmedQuantity = quantity.trim();
-        if(!Quantity.isValidQuantity(trimmedQuantity)) {
+        if (!Quantity.isValidQuantity(trimmedQuantity)) {
             throw new ParseException(Quantity.MESSAGE_CONSTRAINTS);
         }
         return new Quantity(trimmedQuantity);
     }
 
+    /**
+     * Parses the name of the order
+     * @param name
+     * @return
+     * @throws ParseException
+     */
     public static Name parseName(String name) throws ParseException {
         requireNonNull(name);
         String trimmedName = name.trim();
@@ -65,6 +97,12 @@ public class OrderParserUtil {
         return new Name(trimmedName);
     }
 
+    /**
+     * Parses the phone number of the order
+     * @param phone
+     * @return
+     * @throws ParseException
+     */
     public static Phone parsePhone(String phone) throws ParseException {
         requireNonNull(phone);
         String trimmedPhone = phone.trim();
@@ -74,6 +112,12 @@ public class OrderParserUtil {
         return new Phone(trimmedPhone);
     }
 
+    /**
+     * parses the tag of the order
+     * @param tag
+     * @return
+     * @throws ParseException
+     */
     public static Tag parseTag(String tag) throws ParseException {
         requireNonNull(tag);
         String trimmedTag = tag.trim();
@@ -83,6 +127,12 @@ public class OrderParserUtil {
         return new Tag(trimmedTag);
     }
 
+    /**
+     * Parses the tags of the order
+     * @param tags
+     * @return
+     * @throws ParseException
+     */
     public static Set<Tag> parseTags(Collection<String> tags) throws ParseException {
         requireNonNull(tags);
         final Set<Tag> tagSet = new HashSet<>();

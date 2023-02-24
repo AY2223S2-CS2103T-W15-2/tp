@@ -50,10 +50,10 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 ### Chong Wei Guan
 
-<img src="images/johndoe.png" width="200px">
+<img src="images/chongweiguan.jpeg" width="200px">
 
 [[github](https://github.com/chongweiguan)]
-[[portfolio](team/johndoe.md)]
+[[portfolio](team/chongweiguan.md)]
 
 * Role: Developer
 * Responsibilities: Deliverables & Deadlines

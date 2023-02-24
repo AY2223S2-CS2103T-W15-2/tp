@@ -3,6 +3,9 @@ package seedu.address.model.order;
 import static java.util.Objects.requireNonNull;
 import static seedu.address.commons.util.AppUtil.checkArgument;
 
+/**
+ * Customer's Name
+ */
 public class Name {
 
     public static final String MESSAGE_CONSTRAINTS =

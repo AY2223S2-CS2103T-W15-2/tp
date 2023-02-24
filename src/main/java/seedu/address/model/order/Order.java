@@ -9,6 +9,9 @@ import java.util.Set;
 
 import seedu.address.model.tag.Tag;
 
+/**
+ * Order Object
+ */
 public class Order {
 
     private final OrderName ordername;
@@ -19,7 +22,18 @@ public class Order {
     private final Quantity quantity;
     private final Set<Tag> tags = new HashSet<>();
 
-    public Order(OrderName ordername, Name name, Phone phone, Address address, DeliveryDateTime deliveryDateTime, Quantity quantity, Set<Tag> tags) {
+    /**
+     * Order constructor
+     * @param ordername
+     * @param name
+     * @param phone
+     * @param address
+     * @param deliveryDateTime
+     * @param quantity
+     * @param tags
+     */
+    public Order(OrderName ordername, Name name, Phone phone, Address address,
+        DeliveryDateTime deliveryDateTime, Quantity quantity, Set<Tag> tags) {
         requireAllNonNull(ordername, name, phone, address, deliveryDateTime, quantity, tags);
         this.ordername = ordername;
         this.name = name;
@@ -30,30 +44,67 @@ public class Order {
         this.tags.addAll(tags);
     }
 
+    /**
+     * returns the order name of the order
+     * @return
+     */
     public OrderName getOrderName() {
         return ordername;
     }
 
+    /**
+     * returns the customer name
+     * @return
+     */
     public Name getName() {
         return name;
     }
 
+    /**
+     * returns the phone number of the order
+     * @return
+     */
     public Phone getPhone() {
         return phone;
     }
 
+    /**
+     * returns the address of the order
+     * @return
+     */
     public Address getAddress() {
         return address;
     }
 
+    /**
+     * returns of the quantity of the rder
+     * @return
+     */
+    public Quantity getQuantity() {
+        return quantity;
+    }
+
+    /**
+     * returns the delivery date and time of the order
+     * @return
+     */
     public DeliveryDateTime getDeliveryDatetime() {
         return deliveryDateTime;
     }
 
+    /**
+     * returns the tags of the order
+     * @return
+     */
     public Set<Tag> getTags() {
         return Collections.unmodifiableSet(tags);
     }
 
+    /**
+     * returns true if the order is the same
+     * @param otherOrder
+     * @return
+     */
     public boolean isSameOrder(Order otherOrder) {
         if (otherOrder == this) {
             return true;

@@ -75,6 +75,11 @@ public class AddressBook implements ReadOnlyAddressBook {
         return persons.contains(person);
     }
 
+    /**
+     * Returns true if the order list has an order
+     * @param order
+     * @return
+     */
     public boolean hasOrder(Order order) {
         requireNonNull(order);
         return orders.contains(order);
@@ -88,6 +93,10 @@ public class AddressBook implements ReadOnlyAddressBook {
         persons.add(p);
     }
 
+    /**
+     * Adds the order into the order list
+     * @param o
+     */
     public void addOrder(Order o) {
         orders.add(o);
     }
@@ -103,6 +112,11 @@ public class AddressBook implements ReadOnlyAddressBook {
         persons.setPerson(target, editedPerson);
     }
 
+    /**
+     * Replaces the given order with the editedOrder
+     * @param target
+     * @param editedOrder
+     */
     public void setOrder(Order target, Order editedOrder) {
         requireNonNull(editedOrder);
         orders.setOrder(target, editedOrder);
@@ -116,6 +130,10 @@ public class AddressBook implements ReadOnlyAddressBook {
         persons.remove(key);
     }
 
+    /**
+     * removes the given order
+     * @param key
+     */
     public void removeOrder(Order key) {
         orders.remove(key);
     }
@@ -124,7 +142,8 @@ public class AddressBook implements ReadOnlyAddressBook {
 
     @Override
     public String toString() {
-        return persons.asUnmodifiableObservableList().size() + " persons" + orders.asUnmodifiableObservableList().size() + " orders";
+        return persons.asUnmodifiableObservableList().size() +
+        " persons" + orders.asUnmodifiableObservableList().size() + " orders";
         // TODO: refine later
     }
 

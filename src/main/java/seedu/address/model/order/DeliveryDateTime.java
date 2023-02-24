@@ -8,13 +8,21 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Delivery Date and time of the order
+ */
 public class DeliveryDateTime {
 
-    public static final String MESSAGE_CONSTRAINTS = "Date and time should only contain numbers, and it should be in the form dd/MM/yyyy HHmm";
+    public static final String MESSAGE_CONSTRAINTS = "Date and time should only contain numbers," +
+    "and it should be in the form dd/MM/yyyy HHmm";
     private static final String pattern = "dd/MM/yyyy HHmm";
 
     public final LocalDateTime value;
 
+    /**
+     * Constructs the delivery date and time of the order
+     * @param datetime
+     */
     public DeliveryDateTime(String datetime) {
         requireNonNull(datetime);
         checkArgument(isValidDate(datetime), MESSAGE_CONSTRAINTS);
@@ -23,6 +31,11 @@ public class DeliveryDateTime {
         value = parseDateTime;
     }
 
+    /**
+     * returns true if the date and time are valid
+     * @param test
+     * @return
+     */
     public static boolean isValidDate(String test) {
         try {
             new SimpleDateFormat(pattern).parse(test);

@@ -2,21 +2,22 @@ package seedu.address.logic.commands.orders;
 
 import static java.util.Objects.requireNonNull;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_ADDRESS;
-import static seedu.address.logic.parser.CliSyntax.PREFIX_EMAIL;
-import static seedu.address.logic.parser.CliSyntax.PREFIX_NAME;
-import static seedu.address.logic.parser.CliSyntax.PREFIX_PHONE;
-import static seedu.address.logic.parser.CliSyntax.PREFIX_TAG;
-import static seedu.address.logic.parser.CliSyntax.PREFIX_ORDERNAME;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_DELIVERYDATETIME;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_NAME;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_ORDERNAME;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_PHONE;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_QUANTITY;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_TAG;
 
 import seedu.address.logic.commands.Command;
 import seedu.address.logic.commands.CommandResult;
 import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.Model;
 import seedu.address.model.order.Order;
-import seedu.address.model.person.Person;
 
+/**
+ * Adds an order into the order list
+ */
 public class AddOrderCommand extends Command {
 
     public static final String COMMAND_WORD = "addOrder";
@@ -43,6 +44,10 @@ public class AddOrderCommand extends Command {
 
     private final Order toAdd;
 
+    /**
+     * Creates an AddOrderCommand
+     * @param order Order
+     */
     public AddOrderCommand(Order order) {
         requireNonNull(order);
         toAdd = order;
