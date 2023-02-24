@@ -48,8 +48,8 @@ public class AddOrderCommandParser implements Parser<AddOrderCommand> {
         Name name = OrderParserUtil.parseName(argMultimap.getValue(PREFIX_NAME).get());
         Phone phone = OrderParserUtil.parsePhone(argMultimap.getValue(PREFIX_PHONE).get());
         Address address = OrderParserUtil.parseAddress(argMultimap.getValue(PREFIX_ADDRESS).get());
-        DeliveryDateTime deliveryDateTime = OrderParserUtil.parseDeliveryDateTime
-            (argMultimap.getValue(PREFIX_DELIVERYDATETIME).get());
+        DeliveryDateTime deliveryDateTime = OrderParserUtil.parseDeliveryDateTime(
+            argMultimap.getValue(PREFIX_DELIVERYDATETIME).get());
         Quantity quantity = OrderParserUtil.parseQuantity(argMultimap.getValue(PREFIX_QUANTITY).get());
         Set<Tag> tagList = OrderParserUtil.parseTags(argMultimap.getAllValues(PREFIX_TAG));
 

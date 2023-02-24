@@ -130,7 +130,7 @@ public class OrderParserUtil {
     /**
      * Parses the tags of the order
      * @param tags
-     * @return Set<Tag>
+     * @return Set of Tags
      * @throws ParseException
      */
     public static Set<Tag> parseTags(Collection<String> tags) throws ParseException {
