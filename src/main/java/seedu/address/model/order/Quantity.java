@@ -8,7 +8,7 @@ import static seedu.address.commons.util.AppUtil.checkArgument;
  * Guarantees: immutable; is valid as declared in {@link #isValidPhone(String)}
  */
 public class Quantity {
-    
+
     public static final String MESSAGE_CONSTRAINTS = "Quantity should only contain numbers";
     public static final String VALIDATION_REGEX = "\\d+";
     public final String value;

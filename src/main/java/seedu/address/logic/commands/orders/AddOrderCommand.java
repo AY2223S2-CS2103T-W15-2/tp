@@ -18,7 +18,7 @@ import seedu.address.model.order.Order;
 import seedu.address.model.person.Person;
 
 public class AddOrderCommand extends Command {
-    
+
     public static final String COMMAND_WORD = "addOrder";
 
     public static final String MESSAGE_USAGE = COMMAND_WORD + ": Adds an order to the order list"

@@ -17,7 +17,7 @@ public class OrderName {
         checkArgument(isValidOrderName(orderName), MESSAGE_CONSTRAINTS);
         value = orderName;
     }
-    
+
     public static boolean isValidOrderName(String test) {
         return test.matches(VALIDATION_REGEK);
     }

@@ -16,9 +16,9 @@ import seedu.address.model.order.exceptions.OrderNotFoundException;
  * @see Order#isSameOrder(Order)
  */
 public class UniqueOrderList implements Iterable<Order> {
-    
+
     private final ObservableList<Order> internalList = FXCollections.observableArrayList();
-    private final ObservableList<Order> internalUnmodifiableList = 
+    private final ObservableList<Order> internalUnmodifiableList =
             FXCollections.unmodifiableObservableList(internalList);
 
     public boolean contains(Order toCheck) {
@@ -76,8 +76,6 @@ public class UniqueOrderList implements Iterable<Order> {
     public Iterator<Order> iterator() {
         return internalList.iterator();
     }
-
-    
 
     public boolean ordersAreUnique(List<Order> orders) {
         for (int i = 0; i < orders.size() - 1; i++) {

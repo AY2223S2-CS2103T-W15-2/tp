@@ -79,7 +79,6 @@ public class AddCommandTest {
      * A default model stub that have all of the methods failing.
      */
     private class ModelStub implements Model {
-        
 
         @Override
         public void setUserPrefs(ReadOnlyUserPrefs userPrefs) {
