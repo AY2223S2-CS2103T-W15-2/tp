@@ -6,20 +6,7 @@ import static trackr.commons.core.Messages.MESSAGE_UNKNOWN_COMMAND;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import trackr.logic.commands.AddCommand;
-import trackr.logic.commands.AddTaskCommand;
-import trackr.logic.commands.ClearCommand;
-import trackr.logic.commands.ClearTaskCommand;
-import trackr.logic.commands.Command;
-import trackr.logic.commands.DeleteCommand;
-import trackr.logic.commands.DeleteTaskCommand;
-import trackr.logic.commands.EditCommand;
-import trackr.logic.commands.EditTaskCommand;
-import trackr.logic.commands.ExitCommand;
-import trackr.logic.commands.FindCommand;
-import trackr.logic.commands.FindTaskCommand;
-import trackr.logic.commands.HelpCommand;
-import trackr.logic.commands.ListCommand;
+import trackr.logic.commands.*;
 import trackr.logic.parser.exceptions.ParseException;
 
 /**
@@ -62,6 +49,10 @@ public class TrackrParser {
         case EditTaskCommand.COMMAND_WORD:
         case EditTaskCommand.COMMAND_WORD_SHORTCUT:
             return new EditTaskCommandParser().parse(arguments);
+
+        case EditOrderCommand.COMMAND_WORD:
+        case EditOrderCommand.COMMAND_WORD_SHORTCUT:
+            return new EditOrderCommandParser().parse(arguments);
 
         case DeleteCommand.COMMAND_WORD:
             return new DeleteCommandParser().parse(arguments);

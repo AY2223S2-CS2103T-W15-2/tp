@@ -1,0 +1,20 @@
+Mar 15, 2023 4:16:49 AM trackr.MainApp init
+INFO: =============================[ Initializing Trackr ]===========================
+Mar 15, 2023 4:16:49 AM trackr.MainApp initConfig
+INFO: Using config file : config.json
+Mar 15, 2023 4:16:49 AM trackr.MainApp initPrefs
+INFO: Using prefs file : preferences.json
+Mar 15, 2023 4:16:49 AM trackr.commons.core.LogsCenter init
+INFO: currentLogLevel: INFO
+Mar 15, 2023 4:16:49 AM trackr.commons.util.JsonUtil readJsonFile
+INFO: Json file data/trackr.json not found
+Mar 15, 2023 4:16:49 AM trackr.MainApp initModelManager
+INFO: Data file not found. Will be starting with a sample AddressBook
+Mar 15, 2023 4:16:49 AM trackr.commons.util.JsonUtil readJsonFile
+INFO: Json file data/trackr.json not found
+Mar 15, 2023 4:16:49 AM trackr.MainApp initModelManager
+INFO: Data file not found. Will be starting with a sample TaskList
+Mar 15, 2023 4:16:49 AM trackr.MainApp start
+INFO: Starting Trackr V0.2.0ea
+Mar 15, 2023 4:16:49 AM trackr.ui.UiManager start
+INFO: Starting UI...

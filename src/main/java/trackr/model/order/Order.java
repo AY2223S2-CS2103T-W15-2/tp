@@ -42,10 +42,10 @@ public class Order {
     public OrderStatus getOrderStatus() {
         return orderStatus;
     }
-
     public Customer getCustomer() {
         return customer;
     }
+
     /**
      * Returns true if both orders have the same name and deadline
      * This defines a weaker notion of equality between two orders.
@@ -59,6 +59,7 @@ public class Order {
                 && otherOrder.getCustomer().equals(this.getCustomer())
                 && otherOrder.getOrderName().equals(this.getOrderName())
                 && otherOrder.getOrderDeadline().equals(this.getOrderDeadline());
+
     }
 
     /**
