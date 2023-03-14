@@ -197,6 +197,23 @@ public class ModelManager implements Model {
         filteredTasks.setPredicate(predicate);
     }
 
+    //=========== OrderList ===================================================================================
+    @Override
+    public void setOrderList(ReadOnlyOrderList orderList) {
+        this.orderList.resetData(orderList);
+    }
+
+    @Override
+    public ReadOnlyOrderList getOrderList() {
+        return orderList;
+    }
+
+    @Override
+    public void setOrder(Order target, Order editedOrder) {
+        requireAllNonNull(target, editedOrder);
+        orderList.setOrder(target, editedOrder);
+    }
+
     //=========== Filtered Order List Accessors ===============================================================
 
     @Override
@@ -213,17 +230,6 @@ public class ModelManager implements Model {
     public void updateFilteredOrderList(Predicate<Order> predicateShowAllOrders) {
 
     }
-
-    @Override
-    public void setOrder(Order target, Order editedOrder) {
-        requireAllNonNull(target, editedOrder);
-        orderList.setOrder(target, editedOrder);
-    }
-
-
-
-
-
 
 
     //========================================================================================================

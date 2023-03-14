@@ -5,115 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63fb5f6b-c08e-4fc4-8b5c-44ed474342a6" name="Changes" comment="Implement remark command by following the tutorial&#10;&#10;Add the following files,&#10;-RemarkCommand, RemarkCommandParser, Remark to enable  remarks to function successfully for the contacts&#10;-Tests to test RemarkCommand, RemarkCommandParser and Remark&#10;&#10;Modify Person class to include remark.&#10;Modify UI.">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/AppParameters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/MainApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/commons/core/Config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/commons/core/GuiSettings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/commons/core/LogsCenter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/commons/core/Messages.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/commons/core/Version.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/commons/core/index/Index.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/commons/exceptions/DataConversionException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/commons/exceptions/IllegalValueException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/commons/util/AppUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/commons/util/CollectionUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/commons/util/ConfigUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/commons/util/FileUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/commons/util/JsonUtil$LevelDeserializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/commons/util/JsonUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/commons/util/StringUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/Logic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/LogicManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/commands/AddCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/commands/ClearCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/commands/Command.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/commands/CommandResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/commands/DeleteCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/commands/EditCommand$EditPersonDescriptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/commands/EditCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/commands/ExitCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/commands/FindCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/commands/HelpCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/commands/ListCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/commands/RemarkCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/commands/exceptions/CommandException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/parser/AddCommandParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/parser/AddressBookParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/parser/ArgumentMultimap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/parser/ArgumentTokenizer$PrefixPosition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/parser/ArgumentTokenizer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/parser/CliSyntax.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/parser/DeleteCommandParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/parser/EditCommandParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/parser/FindCommandParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/parser/Parser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/parser/ParserUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/parser/Prefix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/parser/RemarkCommandParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/logic/parser/exceptions/ParseException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/AddressBook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/Model.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/ModelManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/ReadOnlyAddressBook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/ReadOnlyUserPrefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/UserPrefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/person/Address.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/person/Email.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/person/Name.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/person/NameContainsKeywordsPredicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/person/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/person/Phone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/person/Remark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/person/UniquePersonList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/person/exceptions/DuplicatePersonException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/person/exceptions/PersonNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/tag/Tag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/model/util/SampleDataUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/storage/AddressBookStorage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/storage/JsonAdaptedPerson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/storage/JsonAdaptedTag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/storage/JsonAddressBookStorage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/storage/JsonSerializableAddressBook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/storage/JsonUserPrefsStorage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/storage/Storage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/storage/StorageManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/storage/UserPrefsStorage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/ui/CommandBox$CommandExecutor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/ui/CommandBox.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/ui/HelpWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/ui/MainWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/ui/PersonCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/ui/PersonListPanel$PersonListViewCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/ui/PersonListPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/ui/ResultDisplay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/ui/StatusBarFooter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/ui/Ui.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/ui/UiManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/seedu/address/ui/UiPart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/view/CommandBox.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/view/CommandBox.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/view/DarkTheme.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/view/DarkTheme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/view/MainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/view/MainWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/view/PersonListCard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/view/PersonListCard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/view/PersonListPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/view/PersonListPanel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/view/ResultDisplay.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/view/ResultDisplay.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/view/StatusBarFooter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/view/StatusBarFooter.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preferences.json" beforeDir="false" afterPath="$PROJECT_DIR$/preferences.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trackr/logic/commands/EditOrderCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trackr/logic/commands/EditOrderCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trackr/logic/parser/ParserUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trackr/logic/parser/ParserUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trackr/logic/parser/CliSyntax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trackr/logic/parser/CliSyntax.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trackr/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trackr/model/Model.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trackr/model/ModelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trackr/model/ModelManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trackr.log.0" beforeDir="false" afterPath="$PROJECT_DIR$/trackr.log.0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trackr.log.0.lck" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +164,7 @@
       <workItem from="1677885817486" duration="8756000" />
       <workItem from="1677914838374" duration="9000" />
       <workItem from="1677990907480" duration="5198000" />
-      <workItem from="1678693399732" duration="30932000" />
+      <workItem from="1678693399732" duration="33003000" />
     </task>
     <task id="LOCAL-00001" summary="Implement remark command by following the tutorial&#10;&#10;Add the following files,&#10;-RemarkCommand, RemarkCommandParser, Remark to enable  remarks to function successfully for the contacts&#10;-Tests to test RemarkCommand, RemarkCommandParser and Remark&#10;&#10;Modify Person class to include remark.&#10;Modify UI.">
       <created>1677901042448</created>

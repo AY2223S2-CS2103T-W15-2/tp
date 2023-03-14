@@ -163,5 +163,9 @@ public interface Model {
 
     void updateFilteredOrderList(Predicate<Order> predicateShowAllOrders);
 
+    void setOrderList(ReadOnlyOrderList orderList);
+
+    ReadOnlyOrderList getOrderList();
+
     void setOrder(Order orderToEdit, Order editedOrder);
 }

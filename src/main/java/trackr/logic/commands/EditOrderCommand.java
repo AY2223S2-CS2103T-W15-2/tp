@@ -6,7 +6,10 @@ import trackr.commons.core.index.Index;
 import trackr.commons.util.CollectionUtil;
 import trackr.logic.commands.exceptions.CommandException;
 import trackr.model.Model;
-import trackr.model.order.*;
+import trackr.model.order.Order;
+import trackr.model.order.OrderDeadline;
+import trackr.model.order.OrderName;
+import trackr.model.order.OrderStatus;
 import trackr.model.order.customer.Customer;
 
 import java.util.List;
@@ -24,9 +27,13 @@ public class EditOrderCommand extends Command {
                 + "by the index number used in the displayed order list. "
                 + "Existing values will be overwritten by the input values.\n"
                 + "Parameters: INDEX (must be a positive integer) "
-                + "[" + PREFIX_NAME + "ORDER NAME] "
+                + "[" + PREFIX_ORDERNAME + "ORDER NAME] "
                 + "[" + PREFIX_DEADLINE + "ORDER DEADLINE] "
-                + "[" + PREFIX_STATUS + "ORDER STATUS]\n"
+                + "[" + PREFIX_STATUS + "ORDER STATUS]"
+                +  PREFIX_NAME + "NAME "
+                + PREFIX_PHONE + "PHONE "
+                + PREFIX_EMAIL + "EMAIL "
+                + PREFIX_ADDRESS + "ADDRESS "
                 + "Example: " + COMMAND_WORD + " 2 "
                 + PREFIX_NAME + "Birthday Cake"
                 + PREFIX_STATUS + "D";
