@@ -27,7 +27,7 @@ public class EditOrderCommand extends Command {
                 + "[" + PREFIX_NAME + "ORDER NAME] "
                 + "[" + PREFIX_DEADLINE + "ORDER DEADLINE] "
                 + "[" + PREFIX_STATUS + "ORDER STATUS]\n"
-                + "Example: " + COMMAND_WORD + " 1 "
+                + "Example: " + COMMAND_WORD + " 2 "
                 + PREFIX_NAME + "Birthday Cake"
                 + PREFIX_STATUS + "D";
 
@@ -38,10 +38,7 @@ public class EditOrderCommand extends Command {
         private final Index index;
         private final EditOrderCommand.EditOrderDescriptor editOrderDescriptor;
 
-        /**
-         * @param index               of the order in the filtered order list to edit
-         * @param editOrderDescriptor details to edit the order with
-         */
+
         public EditOrderCommand(Index index, EditOrderCommand.EditOrderDescriptor editOrderDescriptor) {
                 requireNonNull(index);
                 requireNonNull(editOrderDescriptor);
@@ -71,10 +68,7 @@ public class EditOrderCommand extends Command {
                 return new CommandResult(String.format(MESSAGE_EDIT_ORDER_SUCCESS, editedOrder));
         }
 
-        /**
-         * Creates and returns a {@code Order} with the details of {@code orderToEdit}
-         * edited with {@code editOrderDescriptor}.
-         */
+
         private static Order createEditedOrder(Order orderToEdit, EditOrderDescriptor editOrderDescriptor) {
                 assert orderToEdit != null;
 
@@ -103,10 +97,7 @@ public class EditOrderCommand extends Command {
                         && editOrderDescriptor.equals(e.editOrderDescriptor);
         }
 
-        /**
-         * Stores the details to edit the order with. Each non-empty field value will replace the
-         * corresponding field value of the order.
-         */
+
         public static class EditOrderDescriptor {
                 private OrderName orderName;
                 private OrderDeadline orderDeadline;
@@ -115,9 +106,7 @@ public class EditOrderCommand extends Command {
 
                 public EditOrderDescriptor() {}
 
-                /**
-                 * Copy constructor.
-                 */
+
                 public EditOrderDescriptor(EditOrderDescriptor toCopy) {
                         setOrderName(toCopy.orderName);
                         setOrderDeadline(toCopy.orderDeadline);
@@ -129,9 +118,7 @@ public class EditOrderCommand extends Command {
                         this.customer =customer;
                 }
 
-                /**
-                 * Returns true if at least one field is edited.
-                 */
+
                 public boolean isAnyFieldEdited() {
                         return CollectionUtil.isAnyNonNull(orderName, orderDeadline, orderStatus);
                 }
