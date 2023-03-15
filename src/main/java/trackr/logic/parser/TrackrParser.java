@@ -6,6 +6,21 @@ import static trackr.commons.core.Messages.MESSAGE_UNKNOWN_COMMAND;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import trackr.logic.commands.AddSupplierCommand;
+import trackr.logic.commands.AddTaskCommand;
+import trackr.logic.commands.ClearCommand;
+import trackr.logic.commands.ClearTaskCommand;
+import trackr.logic.commands.Command;
+import trackr.logic.commands.DeleteSupplierCommand;
+import trackr.logic.commands.DeleteTaskCommand;
+import trackr.logic.commands.EditSupplierCommand;
+import trackr.logic.commands.EditTaskCommand;
+import trackr.logic.commands.ExitCommand;
+import trackr.logic.commands.FindSupplierCommand;
+import trackr.logic.commands.FindTaskCommand;
+import trackr.logic.commands.HelpCommand;
+import trackr.logic.commands.ListCommand;
+import trackr.logic.commands.ListTaskCommand;
 import trackr.logic.commands.*;
 import trackr.logic.parser.exceptions.ParseException;
 
@@ -36,20 +51,23 @@ public class TrackrParser {
         final String arguments = matcher.group("arguments");
         switch (commandWord) {
 
-        case AddCommand.COMMAND_WORD:
-            return new AddCommandParser().parse(arguments);
+        case AddSupplierCommand.COMMAND_WORD:
+        case AddSupplierCommand.COMMAND_WORD_SHORTCUT:
+            return new AddSupplierCommandParser().parse(arguments);
 
         case AddTaskCommand.COMMAND_WORD:
         case AddTaskCommand.COMMAND_WORD_SHORTCUT:
             return new AddTaskCommandParser().parse(arguments);
 
-        case EditCommand.COMMAND_WORD:
-            return new EditCommandParser().parse(arguments);
+        case EditSupplierCommand.COMMAND_WORD:
+            return new EditSupplierCommandParser().parse(arguments);
 
         case EditTaskCommand.COMMAND_WORD:
         case EditTaskCommand.COMMAND_WORD_SHORTCUT:
             return new EditTaskCommandParser().parse(arguments);
 
+        case DeleteSupplierCommand.COMMAND_WORD:
+            return new DeleteSupplierCommandParser().parse(arguments);
         case EditOrderCommand.COMMAND_WORD:
         case EditOrderCommand.COMMAND_WORD_SHORTCUT:
             return new EditOrderCommandParser().parse(arguments);
@@ -68,8 +86,8 @@ public class TrackrParser {
         case ClearTaskCommand.COMMAND_WORD_SHORTCUT:
             return new ClearTaskCommand();
 
-        case FindCommand.COMMAND_WORD:
-            return new FindCommandParser().parse(arguments);
+        case FindSupplierCommand.COMMAND_WORD:
+            return new FindSupplierCommandParser().parse(arguments);
 
         case FindTaskCommand.COMMAND_WORD:
         case FindTaskCommand.COMMAND_WORD_SHORTCUT:
@@ -77,6 +95,10 @@ public class TrackrParser {
 
         case ListCommand.COMMAND_WORD:
             return new ListCommand();
+
+        case ListTaskCommand.COMMAND_WORD:
+        case ListTaskCommand.COMMAND_WORD_SHORTCUT:
+            return new ListTaskCommand();
 
         case ExitCommand.COMMAND_WORD:
             return new ExitCommand();
