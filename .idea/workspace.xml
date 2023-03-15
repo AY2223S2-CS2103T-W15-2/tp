@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63fb5f6b-c08e-4fc4-8b5c-44ed474342a6" name="Changes" comment="Implement remark command by following the tutorial&#10;&#10;Add the following files,&#10;-RemarkCommand, RemarkCommandParser, Remark to enable  remarks to function successfully for the contacts&#10;-Tests to test RemarkCommand, RemarkCommandParser and Remark&#10;&#10;Modify Person class to include remark.&#10;Modify UI.">
+    <list default="true" id="63fb5f6b-c08e-4fc4-8b5c-44ed474342a6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trackr/logic/commands/EditOrderCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trackr/logic/commands/EditOrderCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trackr/logic/parser/CliSyntax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trackr/logic/parser/CliSyntax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trackr/logic/parser/ParserUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trackr/logic/parser/ParserUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trackr/logic/parser/TrackrParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trackr/logic/parser/TrackrParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trackr/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trackr/model/Model.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trackr/model/ModelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trackr/model/ModelManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trackr/model/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trackr/model/order/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +27,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tp" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>

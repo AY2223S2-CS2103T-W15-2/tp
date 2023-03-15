@@ -6,10 +6,7 @@ import trackr.commons.core.index.Index;
 import trackr.commons.util.CollectionUtil;
 import trackr.logic.commands.exceptions.CommandException;
 import trackr.model.Model;
-import trackr.model.order.Order;
-import trackr.model.order.OrderDeadline;
-import trackr.model.order.OrderName;
-import trackr.model.order.OrderStatus;
+import trackr.model.order.*;
 import trackr.model.order.customer.Customer;
 
 import java.util.List;
@@ -30,6 +27,7 @@ public class EditOrderCommand extends Command {
                 + "[" + PREFIX_ORDERNAME + "ORDER NAME] "
                 + "[" + PREFIX_DEADLINE + "ORDER DEADLINE] "
                 + "[" + PREFIX_STATUS + "ORDER STATUS]"
+                + "[" + PREFIX_QUANTITY + "ORDER QUANTITY]"
                 +  PREFIX_NAME + "NAME "
                 + PREFIX_PHONE + "PHONE "
                 + PREFIX_EMAIL + "EMAIL "
@@ -85,10 +83,12 @@ public class EditOrderCommand extends Command {
                         editOrderDescriptor.getOrderDeadline().orElse(orderToEdit.getOrderDeadline());
                 OrderStatus updatedOrderStatus =
                         editOrderDescriptor.getOrderStatus().orElse(orderToEdit.getOrderStatus());
+                OrderQuantity updatedOrderQuantity =
+                        editOrderDescriptor.getOrderQuantity().orElse(orderToEdit.getOrderQuantity());
                 Customer updatedCustomer =
                         editOrderDescriptor.getCustomer().orElse(orderToEdit.getCustomer());
 
-                return new Order(updatedOrderName, updatedOrderDeadline, updatedOrderStatus, updatedCustomer);
+                return new Order(updatedOrderName, updatedOrderDeadline, updatedOrderStatus, updatedOrderQuantity, updatedCustomer);
         }
 
         @Override
@@ -109,6 +109,7 @@ public class EditOrderCommand extends Command {
                 private OrderName orderName;
                 private OrderDeadline orderDeadline;
                 private OrderStatus orderStatus;
+                private OrderQuantity orderQuantity;
                 private Customer customer;
 
                 public EditOrderDescriptor() {}
@@ -118,7 +119,12 @@ public class EditOrderCommand extends Command {
                         setOrderName(toCopy.orderName);
                         setOrderDeadline(toCopy.orderDeadline);
                         setOrderStatus(toCopy.orderStatus);
+                        setOrderQuantity(toCopy.orderQuantity);
                         setCustomer(toCopy.customer);
+                }
+
+                private void setOrderQuantity(OrderQuantity orderQuantity) {
+                        this.orderQuantity = orderQuantity;
                 }
 
                 private void setCustomer(Customer customer) {
@@ -158,6 +164,10 @@ public class EditOrderCommand extends Command {
                         return Optional.ofNullable(customer);
                 }
 
+                public Optional<OrderQuantity> getOrderQuantity() {
+                        return Optional.ofNullable(orderQuantity);
+                }
+
 
                 @Override
                 public boolean equals(Object other) {
@@ -174,8 +184,10 @@ public class EditOrderCommand extends Command {
                         return getOrderName().equals(e.getOrderName())
                                 && getOrderDeadline().equals(e.getOrderDeadline())
                                 && getOrderStatus().equals(e.getOrderStatus())
+                                && getOrderQuantity().equals(e.getOrderQuantity())
                                 && getCustomer().equals(e.getCustomer());
                 }
+
 
 
         }

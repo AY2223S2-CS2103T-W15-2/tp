@@ -17,10 +17,7 @@ import trackr.model.supplier.Phone;
 import trackr.model.order.OrderDeadline;
 import trackr.model.order.OrderName;
 import trackr.model.order.OrderStatus;
-import trackr.model.person.Address;
-import trackr.model.person.Email;
-import trackr.model.person.Name;
-import trackr.model.person.Phone;
+
 import trackr.model.tag.Tag;
 import trackr.model.task.TaskDeadline;
 import trackr.model.task.TaskName;

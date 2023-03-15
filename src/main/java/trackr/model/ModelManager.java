@@ -13,7 +13,6 @@ import trackr.commons.core.GuiSettings;
 import trackr.commons.core.LogsCenter;
 import trackr.model.supplier.Supplier;
 import trackr.model.order.Order;
-import trackr.model.person.Person;
 import trackr.model.task.Task;
 
 /**

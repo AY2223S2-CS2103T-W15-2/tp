@@ -72,8 +72,6 @@ public class TrackrParser {
         case EditOrderCommand.COMMAND_WORD_SHORTCUT:
             return new EditOrderCommandParser().parse(arguments);
 
-        case DeleteCommand.COMMAND_WORD:
-            return new DeleteCommandParser().parse(arguments);
 
         case DeleteTaskCommand.COMMAND_WORD:
         case DeleteTaskCommand.COMMAND_WORD_SHORTCUT:

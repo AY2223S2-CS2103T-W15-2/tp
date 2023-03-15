@@ -7,7 +7,6 @@ import java.util.function.Predicate;
 import javafx.collections.ObservableList;
 import trackr.commons.core.GuiSettings;
 import trackr.model.order.Order;
-import trackr.model.person.Person;
 import trackr.model.supplier.Supplier;
 import trackr.model.task.Task;
 
@@ -109,7 +108,7 @@ public interface Model {
      *
      * @throws NullPointerException if {@code predicate} is null.
      */
-    void updateFilteredPersonList(Predicate<Person> predicate);
+    void updateFilteredSupplierList(Predicate<Supplier> predicate);
 
     // ===================================================== Task =====================================================
 

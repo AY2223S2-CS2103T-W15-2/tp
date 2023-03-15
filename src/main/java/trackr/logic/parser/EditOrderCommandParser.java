@@ -3,9 +3,7 @@ package trackr.logic.parser;
 
 import static java.util.Objects.requireNonNull;
 import static trackr.commons.core.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
-import static trackr.logic.parser.CliSyntax.PREFIX_DEADLINE;
-import static trackr.logic.parser.CliSyntax.PREFIX_NAME;
-import static trackr.logic.parser.CliSyntax.PREFIX_STATUS;
+import static trackr.logic.parser.CliSyntax.*;
 
 import trackr.commons.core.index.Index;
 import trackr.logic.commands.EditOrderCommand;
@@ -25,7 +23,7 @@ public class EditOrderCommandParser implements Parser<EditOrderCommand> {
     public EditOrderCommand parse(String args) throws ParseException {
         requireNonNull(args);
         ArgumentMultimap argMultimap =
-                ArgumentTokenizer.tokenize(args, PREFIX_NAME, PREFIX_DEADLINE, PREFIX_STATUS);
+                ArgumentTokenizer.tokenize(args, PREFIX_ORDERNAME, PREFIX_DEADLINE, PREFIX_STATUS, PREFIX_QUANTITY);
 
         Index index;
 
@@ -37,7 +35,7 @@ public class EditOrderCommandParser implements Parser<EditOrderCommand> {
         }
 
         EditOrderDescriptor editOrderDescriptor = new EditOrderDescriptor();
-        if (argMultimap.getValue(PREFIX_NAME).isPresent()) {
+        if (argMultimap.getValue(PREFIX_ORDERNAME).isPresent()) {
             editOrderDescriptor.setOrderName(
                     ParserUtil.parseOrderName(argMultimap.getValue(PREFIX_NAME).get()));
         }
