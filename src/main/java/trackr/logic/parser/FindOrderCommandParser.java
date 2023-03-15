@@ -2,13 +2,15 @@ package trackr.logic.parser;
 
 import static trackr.commons.core.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
 
-
 import java.util.Arrays;
 
 import trackr.logic.commands.FindOrderCommand;
 import trackr.logic.parser.exceptions.ParseException;
 import trackr.model.order.OrderNameContainsKeywordPredicate;
 
+/**
+ * Parses input arguments and creates a new FindOrderCommand object
+ */
 public class FindOrderCommandParser implements Parser<FindOrderCommand> {
 
     /**

@@ -6,7 +6,22 @@ import static trackr.commons.core.Messages.MESSAGE_UNKNOWN_COMMAND;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import trackr.logic.commands.*;
+import trackr.logic.commands.AddSupplierCommand;
+import trackr.logic.commands.AddTaskCommand;
+import trackr.logic.commands.ClearCommand;
+import trackr.logic.commands.ClearTaskCommand;
+import trackr.logic.commands.Command;
+import trackr.logic.commands.DeleteSupplierCommand;
+import trackr.logic.commands.DeleteTaskCommand;
+import trackr.logic.commands.EditSupplierCommand;
+import trackr.logic.commands.EditTaskCommand;
+import trackr.logic.commands.ExitCommand;
+import trackr.logic.commands.FindOrderCommand;
+import trackr.logic.commands.FindSupplierCommand;
+import trackr.logic.commands.FindTaskCommand;
+import trackr.logic.commands.HelpCommand;
+import trackr.logic.commands.ListCommand;
+import trackr.logic.commands.ListTaskCommand;
 import trackr.logic.parser.exceptions.ParseException;
 
 /**
@@ -74,7 +89,7 @@ public class TrackrParser {
 
         case FindOrderCommand.COMMAND_WORD:
         case FindOrderCommand.COMMAND_WORD_SHORTCUT:
-             return new FindOrderCommandParser().parse(arguments);
+            return new FindOrderCommandParser().parse(arguments);
 
         case ListCommand.COMMAND_WORD:
             return new ListCommand();
