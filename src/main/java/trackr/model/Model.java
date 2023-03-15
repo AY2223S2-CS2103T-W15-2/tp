@@ -1,10 +1,13 @@
 package trackr.model;
 
 import java.nio.file.Path;
+import java.util.Collection;
 import java.util.function.Predicate;
 
 import javafx.collections.ObservableList;
 import trackr.commons.core.GuiSettings;
+import trackr.model.order.Order;
+import trackr.model.order.OrderNameContainsKeywordPredicate;
 import trackr.model.supplier.Supplier;
 import trackr.model.task.Task;
 
@@ -150,4 +153,8 @@ public interface Model {
      * @throws NullPointerException if {@code predicate} is null.
      */
     void updateFilteredTaskList(Predicate<Task> predicate);
+
+    void updateFilteredOrderList(Predicate<Order> predicate);
+
+    ObservableList<Task> getFilteredOrderList();
 }
