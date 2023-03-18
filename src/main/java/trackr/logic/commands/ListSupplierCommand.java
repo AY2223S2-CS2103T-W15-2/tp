@@ -6,7 +6,7 @@ import static trackr.model.Model.PREDICATE_SHOW_ALL_PERSONS;
 import trackr.model.Model;
 
 /**
- * Lists all persons in the address book to the user.
+ * Lists all suppliers in the supplier list to the user.
  */
 public class ListSupplierCommand extends Command {
 

@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test;
 
 import trackr.logic.commands.AddSupplierCommand;
 import trackr.logic.commands.AddTaskCommand;
-import trackr.logic.commands.ClearCommand;
+import trackr.logic.commands.ClearSupplierCommand;
 import trackr.logic.commands.ClearTaskCommand;
 import trackr.logic.commands.DeleteSupplierCommand;
 import trackr.logic.commands.DeleteTaskCommand;
@@ -26,7 +26,7 @@ import trackr.logic.commands.ExitCommand;
 import trackr.logic.commands.FindSupplierCommand;
 import trackr.logic.commands.FindTaskCommand;
 import trackr.logic.commands.HelpCommand;
-import trackr.logic.commands.ListCommand;
+import trackr.logic.commands.ListSupplierCommand;
 import trackr.logic.commands.ListTaskCommand;
 import trackr.logic.parser.exceptions.ParseException;
 import trackr.model.supplier.NameContainsKeywordsPredicate;
@@ -70,8 +70,8 @@ public class TrackrParserTest {
 
     @Test
     public void parseCommand_clear() throws Exception {
-        assertTrue(parser.parseCommand(ClearCommand.COMMAND_WORD) instanceof ClearCommand);
-        assertTrue(parser.parseCommand(ClearCommand.COMMAND_WORD + " 3") instanceof ClearCommand);
+        assertTrue(parser.parseCommand(ClearSupplierCommand.COMMAND_WORD) instanceof ClearSupplierCommand);
+        assertTrue(parser.parseCommand(ClearSupplierCommand.COMMAND_WORD + " 3") instanceof ClearSupplierCommand);
     }
 
     @Test
@@ -183,8 +183,8 @@ public class TrackrParserTest {
 
     @Test
     public void parseCommand_list() throws Exception {
-        assertTrue(parser.parseCommand(ListCommand.COMMAND_WORD) instanceof ListCommand);
-        assertTrue(parser.parseCommand(ListCommand.COMMAND_WORD + " 3") instanceof ListCommand);
+        assertTrue(parser.parseCommand(ListSupplierCommand.COMMAND_WORD) instanceof ListSupplierCommand);
+        assertTrue(parser.parseCommand(ListSupplierCommand.COMMAND_WORD + " 3") instanceof ListSupplierCommand);
     }
 
     @Test

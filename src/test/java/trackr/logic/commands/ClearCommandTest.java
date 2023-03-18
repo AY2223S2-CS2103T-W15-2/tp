@@ -19,7 +19,7 @@ public class ClearCommandTest {
         Model model = new ModelManager();
         Model expectedModel = new ModelManager();
 
-        assertCommandSuccess(new ClearCommand(), model, ClearCommand.MESSAGE_SUCCESS, expectedModel);
+        assertCommandSuccess(new ClearSupplierCommand(), model, ClearSupplierCommand.MESSAGE_SUCCESS, expectedModel);
     }
 
     @Test
@@ -30,7 +30,7 @@ public class ClearCommandTest {
                 getTypicalOrderList(), new UserPrefs());
         expectedModel.setSupplierList(new SupplierList());
 
-        assertCommandSuccess(new ClearCommand(), model, ClearCommand.MESSAGE_SUCCESS, expectedModel);
+        assertCommandSuccess(new ClearSupplierCommand(), model, ClearSupplierCommand.MESSAGE_SUCCESS, expectedModel);
     }
 
 }
